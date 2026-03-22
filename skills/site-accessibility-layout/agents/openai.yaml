@@ -1,0 +1,4 @@
+interface:
+  display_name: "Site Accessibility Layout"
+  short_description: "WCAG-first semantic layout and accessible site patterns"
+  default_prompt: "Use $site-accessibility-layout to make a website layout semantic, accessible, and keyboard-safe."

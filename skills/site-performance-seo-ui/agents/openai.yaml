@@ -1,0 +1,4 @@
+interface:
+  display_name: "Site Performance SEO UI"
+  short_description: "Fast, SEO-safe UI patterns for modern websites"
+  default_prompt: "Use $site-performance-seo-ui to improve page speed, responsive media, and SEO-safe interface patterns."

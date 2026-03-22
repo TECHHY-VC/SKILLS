@@ -1,0 +1,4 @@
+interface:
+  display_name: "Site Design System"
+  short_description: "Design systems, tokens, and component contracts"
+  default_prompt: "Use $site-design-system to design or refine a reusable web design system."

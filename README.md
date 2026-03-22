@@ -22,6 +22,12 @@ This repository contains only generalized skill packages reviewed to avoid:
 - [`skills/recharts-stacked-interactivity`](skills/recharts-stacked-interactivity) — Interactive stacked area and pie charts in React/Recharts
 - [`skills/jump-host-static-deploy`](skills/jump-host-static-deploy) — Deploy static sites via SSH jump host to Nginx on Linux VPS
 
+### Website Design & UX
+- [`skills/site-design-system`](skills/site-design-system) — Design systems, tokens, component contracts, and reusable page structure for websites
+- [`skills/site-accessibility-layout`](skills/site-accessibility-layout) — WCAG-first semantic layout, forms, navigation, focus handling, and keyboard-safe patterns
+- [`skills/site-performance-seo-ui`](skills/site-performance-seo-ui) — Core Web Vitals, responsive media, and crawl-safe interface patterns for modern websites
+- [`skills/site-ux-states-patterns`](skills/site-ux-states-patterns) — Loading, empty, error, success, disclosure, and motion patterns for resilient website UX
+
 ### Context Engineering
 - [`skills/context-fundamentals`](skills/context-fundamentals) — Foundational concepts: context components, attention mechanics, progressive disclosure
 - [`skills/context-degradation`](skills/context-degradation) — Patterns of context failure: lost-in-middle, poisoning, distraction, confusion, clash

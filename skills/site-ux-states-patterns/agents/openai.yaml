@@ -1,0 +1,4 @@
+interface:
+  display_name: "Site UX States Patterns"
+  short_description: "UX states, form flows, motion, and disclosure patterns"
+  default_prompt: "Use $site-ux-states-patterns to design robust loading, empty, error, and motion patterns for websites."
