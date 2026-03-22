@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dashboard Reading Flow"
+  short_description: "Structure analytical dashboards into a clear narrative sequence"
+  default_prompt: "Use $dashboard-reading-flow to audit or improve the information hierarchy of an analytical dashboard."

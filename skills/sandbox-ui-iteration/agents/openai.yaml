@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sandbox UI Iteration"
+  short_description: "Safe sandbox-first UI change workflow"
+  default_prompt: "Use $sandbox-ui-iteration to iterate on website UI in a sandbox or preview environment without touching production."

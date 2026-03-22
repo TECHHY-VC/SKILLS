@@ -21,12 +21,14 @@ This repository contains only generalized skill packages reviewed to avoid:
 - [`skills/playwright`](skills/playwright) — Automate real browsers from the terminal via playwright-cli
 - [`skills/recharts-stacked-interactivity`](skills/recharts-stacked-interactivity) — Interactive stacked area and pie charts in React/Recharts
 - [`skills/jump-host-static-deploy`](skills/jump-host-static-deploy) — Deploy static sites via SSH jump host to Nginx on Linux VPS
+- [`skills/sandbox-ui-iteration`](skills/sandbox-ui-iteration) — Sandbox-first workflow for safe frontend iteration, visual QA, and production isolation
 
 ### Website Design & UX
 - [`skills/site-design-system`](skills/site-design-system) — Design systems, tokens, component contracts, and reusable page structure for websites
 - [`skills/site-accessibility-layout`](skills/site-accessibility-layout) — WCAG-first semantic layout, forms, navigation, focus handling, and keyboard-safe patterns
 - [`skills/site-performance-seo-ui`](skills/site-performance-seo-ui) — Core Web Vitals, responsive media, and crawl-safe interface patterns for modern websites
 - [`skills/site-ux-states-patterns`](skills/site-ux-states-patterns) — Loading, empty, error, success, disclosure, and motion patterns for resilient website UX
+- [`skills/dashboard-reading-flow`](skills/dashboard-reading-flow) — Information hierarchy for analytical dashboards: snapshot, controls, interpretation, charts, and drill-downs
 
 ### Context Engineering
 - [`skills/context-fundamentals`](skills/context-fundamentals) — Foundational concepts: context components, attention mechanics, progressive disclosure
