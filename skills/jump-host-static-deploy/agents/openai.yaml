@@ -1,0 +1,4 @@
+interface:
+  display_name: "Jump-Host Static Deploy"
+  short_description: "Deploy static sites to VPS through a jump host"
+  default_prompt: "Use $jump-host-static-deploy to publish this static site to an Nginx VPS through an SSH jump host."

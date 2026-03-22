@@ -1,0 +1,4 @@
+interface:
+  display_name: "Interactive Recharts Stacks"
+  short_description: "Build hoverable stacked Recharts dashboards"
+  default_prompt: "Use $recharts-stacked-interactivity to implement interactive stacked Recharts charts with hover legends and series toggles."
