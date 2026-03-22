@@ -1,15 +1,13 @@
 ---
 name: copywriter
-description: Writing and copywriting style of Mikhail / Misha Hypov — independent trader and analyst. Use this skill when you need to write an article, review, analytical material or educational content in his signature style.
+description: Write financial education articles, market reviews, analytical explainers, and trading guides in a clear mentor-style voice. Use this skill when the task needs practical, reader-friendly financial copy that balances explanation, examples, and risk awareness.
 ---
 
-# Copywriting Style: Mikhail / Misha Hypov (LiteFinance)
+# Financial Education Copywriter
 
-## Author Profile
+## Voice Model
 
-**Mikhail Hypov** — independent trader and analyst, MBA in economics, trading since 2007 on Forex, MICEX, and crypto markets. Regularly ranks in TradingView top crypto analyst ratings. Has been running free online courses since 2017.
-
-**Role in text**: experienced mentor sharing knowledge with a student. Not a professor reading a lecture — but a senior colleague explaining things at the same desk.
+Write as an experienced market analyst explaining concepts to a motivated reader. The tone should feel like a knowledgeable mentor at the same desk, not a distant lecturer and not a corporate marketing page.
 
 ---
 
@@ -21,7 +19,7 @@ description: Writing and copywriting style of Mikhail / Misha Hypov — independ
 - Frequently uses "we" — creates sense of joint analysis: "Let's figure out...", "Now let's look at..."
 - Honest about limitations and risks: does not hide tool drawbacks
 - Balance of optimism and caution: gives hope but warns
-- Personal experience as argument: "With years of experience in crypto trading, I have seen..."
+- Uses practical experience as support: "In practice, traders often see..."
 
 **What is absent**: familiarity, aggressive marketing, exaggerations, empty promises.
 
@@ -69,7 +67,7 @@ Related materials        ← links to related topics
 
 **Principle: from general to specific, from theory to practice.**
 
-1. What it is and where it came from (history/creator)
+1. What it is and where it came from (history/creator, when relevant)
 2. How it works inside (mechanics/formula)
 3. How to read signals (interpretation)
 4. How to trade (specific strategies with entry/exit points)
@@ -90,7 +88,7 @@ Each section logically follows the previous. The reader never gets lost.
 - "Let us begin with..."
 - "In this section, we will cover..."
 
-**Internal references:**
+**Cross references:**
 - "As we mentioned above..."
 - "As I described earlier..."
 - "Let me remind you once again..."
@@ -102,11 +100,12 @@ Each section logically follows the previous. The reader never gets lost.
 - "As a rule..."
 - "In practical terms..."
 
-**Personal position:**
+**Positioning and guidance:**
 - "I recommend..."
-- "In my experience..."
-- "I have compiled a personal rating..."
-- "With years of experience, I have seen..."
+- "In practice..."
+- "A useful rule of thumb is..."
+- "One effective way to compare them is..."
+- "A common mistake traders make is..."
 
 **Chart demonstrations:**
 - "You can see in the chart above..."
@@ -157,7 +156,7 @@ Each section logically follows the previous. The reader never gets lost.
 - Never leaves a term unexplained at first occurrence
 - Balance: professional language + accessible explanation
 - Specific numbers always better than vague estimates: "$13 → $1,100" instead of "sharp growth"
-- References to creators/history add authority: "developed by Gerald Appel in 1979"
+- References to creators/history can add authority: "developed by Gerald Appel in 1979"
 
 ---
 
@@ -208,7 +207,7 @@ Example:
 |-----|------|
 | Abstract promises "earn more" | Specific strategy with numbers |
 | Complex academic text without explanations | Term + contextual explanation |
-| "Some traders believe..." | "In my experience..." / specific source |
+| "Some traders believe..." | Clear guidance or specific source |
 | Long paragraphs of 8-10 sentences | Maximum 4 sentences per paragraph |
 | Text only without visualization | Each concept → screenshot/diagram |
 | Complete certainty in forecasts | Honest "it is not possible to guarantee..." |

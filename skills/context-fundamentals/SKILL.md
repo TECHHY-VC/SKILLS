@@ -163,7 +163,7 @@ This skill provides foundational context that all other skills build upon. It sh
 
 ## References
 
-Internal reference:
+Bundled references:
 - [Context Components Reference](./references/context-components.md) - Detailed technical reference
 
 Related skills in this collection:

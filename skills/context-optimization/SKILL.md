@@ -156,7 +156,7 @@ This skill builds on context-fundamentals and context-degradation. It connects t
 
 ## References
 
-Internal reference:
+Bundled references:
 - [Optimization Techniques Reference](./references/optimization_techniques.md) - Detailed technical reference
 
 Related skills in this collection:

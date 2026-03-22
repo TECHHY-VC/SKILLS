@@ -427,7 +427,7 @@ This skill integrates with:
 
 ## References
 
-Internal reference:
+Bundled references:
 - [LLM-as-Judge Implementation Patterns](./references/implementation-patterns.md)
 - [Bias Mitigation Techniques](./references/bias-mitigation.md)
 - [Metric Selection Guide](./references/metrics-guide.md)

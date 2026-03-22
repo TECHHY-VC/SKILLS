@@ -208,12 +208,12 @@ This skill connects to all other skills as a cross-cutting concern:
 
 ## References
 
-Internal reference:
+Bundled references:
 - [Metrics Reference](./references/metrics.md) - Detailed evaluation metrics and implementation
 
-## References
+## Related Skills
 
-Internal skills:
+Skill connections:
 - All other skills connect to evaluation for quality measurement
 
 External resources:

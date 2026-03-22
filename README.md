@@ -12,7 +12,7 @@ This repository contains only generalized skill packages reviewed to avoid:
 ## Available Skills
 
 ### Content & Style
-- [`skills/copywriter`](skills/copywriter) — Writing style of Mikhail Hypov (LiteFinance): financial analysis articles, educational trading content, market reviews
+- [`skills/copywriter`](skills/copywriter) — Financial analysis articles, educational trading content, and market reviews in a clear mentor-style voice
 - [`skills/documentation-style`](skills/documentation-style) — Team style for README, CHANGELOG, JSDoc technical documentation
 - [`skills/team-coding-standards`](skills/team-coding-standards) — Code review standards: naming conventions, JSDoc requirements, why-comments
 

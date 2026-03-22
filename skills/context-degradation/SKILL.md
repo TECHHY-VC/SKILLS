@@ -208,7 +208,7 @@ This skill builds on context-fundamentals and should be studied after understand
 
 ## References
 
-Internal reference:
+Bundled references:
 - [Degradation Patterns Reference](./references/patterns.md) - Detailed technical reference
 
 Related skills in this collection:

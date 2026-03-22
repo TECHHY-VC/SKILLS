@@ -184,7 +184,7 @@ This skill builds on context-fundamentals. It connects to:
 
 ## References
 
-Internal references:
+Bundled references:
 - [Implementation Reference](./references/implementation.md) - Detailed implementation patterns, production framework references (Mem0, Graphiti, Cognee)
 
 Related skills in this collection:

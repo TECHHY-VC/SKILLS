@@ -287,7 +287,7 @@ This skill connects to:
 
 ## References
 
-Internal references:
+Bundled references:
 - [Best Practices Reference](./references/best_practices.md) - Detailed tool design guidelines
 - [Architectural Reduction Case Study](./references/architectural_reduction.md) - Production evidence for tool minimalism
 
@@ -299,7 +299,7 @@ External resources:
 - MCP (Model Context Protocol) documentation
 - Framework tool conventions
 - API design best practices for agents
-- Vercel d0 agent architecture case study
+- Agent architecture reduction case study
 
 ---
 

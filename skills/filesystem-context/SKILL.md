@@ -297,7 +297,7 @@ This skill connects to:
 
 ## References
 
-Internal reference:
+Bundled references:
 - [Implementation Patterns](./references/implementation-patterns.md) - Detailed pattern implementations
 
 Related skills in this collection:

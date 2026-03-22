@@ -280,15 +280,15 @@ Architecture:
 
 Results: $58 total cost, ~1 hour execution, static HTML output.
 
-**Example 2: Architectural Reduction (Vercel d0)**
+**Example 2: Architectural Reduction**
 
-Task: Text-to-SQL agent for internal analytics.
+Task: Text-to-SQL agent for a business analytics dataset.
 
 Before: 17 specialized tools, 80% success rate, 274s average execution.
 
 After: 2 tools (bash + SQL), 100% success rate, 77s average execution.
 
-Key insight: The semantic layer was already good documentation. Claude just needed access to read files directly.
+Key insight: The semantic layer was already good documentation. The agent mainly needed direct file access and query execution.
 
 See [Case Studies](./references/case-studies.md) for detailed analysis.
 
@@ -316,8 +316,8 @@ This skill connects to:
 
 ## References
 
-Internal references:
-- [Case Studies](./references/case-studies.md) - Karpathy HN Capsule, Vercel d0, Manus patterns
+Bundled references:
+- [Case Studies](./references/case-studies.md) - content pipeline, tool reduction, and context-pattern examples
 - [Pipeline Patterns](./references/pipeline-patterns.md) - Detailed pipeline architecture guidance
 
 Related skills in this collection:
@@ -327,7 +327,7 @@ Related skills in this collection:
 
 External resources:
 - Karpathy's HN Time Capsule project: https://github.com/karpathy/hn-time-capsule
-- Vercel d0 architectural reduction: https://vercel.com/blog/we-removed-80-percent-of-our-agents-tools
+- Architectural reduction case study: https://vercel.com/blog/we-removed-80-percent-of-our-agents-tools
 - Manus context engineering: Peak Ji's blog on context engineering lessons
 - Anthropic multi-agent research: How we built our multi-agent research system
 

@@ -241,7 +241,7 @@ This skill connects to several others in the collection:
 
 ## References
 
-Internal reference:
+Bundled references:
 - [Evaluation Framework Reference](./references/evaluation-framework.md) - Detailed probe types and scoring rubrics
 
 Related skills in this collection:

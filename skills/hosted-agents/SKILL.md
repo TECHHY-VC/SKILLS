@@ -177,7 +177,7 @@ Use GitHub authentication to:
 ### Client Implementations
 
 **Slack Integration**
-The most effective distribution channel for internal adoption:
+One effective distribution channel for team adoption:
 - Creates virality loop as team members see others using it
 - No syntax required, natural chat interface
 - Classify repository from message, thread context, and channel name
@@ -227,7 +227,7 @@ Track metrics that indicate real value:
 
 ### Adoption Strategy
 
-Internal adoption patterns that work:
+Adoption patterns that work:
 - Work in public spaces (Slack channels) for visibility
 - Let the product create virality loops
 - Don't force usage over existing tools
@@ -255,7 +255,7 @@ This skill builds on multi-agent-patterns for agent coordination and tool-design
 
 ## References
 
-Internal reference:
+Bundled references:
 - [Infrastructure Patterns](./references/infrastructure-patterns.md) - Detailed implementation patterns
 
 Related skills in this collection:
