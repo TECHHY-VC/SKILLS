@@ -9,6 +9,19 @@ description: "Use when the task requires automating a real browser from the term
 Drive a real browser from the terminal using `playwright-cli`. Prefer the bundled wrapper script so the CLI works even when it is not globally installed.
 Treat this skill as CLI-first automation. Do not pivot to `@playwright/test` unless the user explicitly asks for test files.
 
+## What this skill is for
+
+Use this skill when a real browser is the fastest way to verify behavior or gather evidence. Typical requests include:
+
+- reproduce a UI bug on a live site
+- click through a workflow and confirm what changed
+- capture screenshots or snapshots for review
+- extract content from a rendered page
+- verify production after a deploy
+- inspect controls that depend on JavaScript and cannot be trusted from static HTML alone
+
+Prefer this skill over static code inspection when the user cares about what the browser actually renders.
+
 ## Prerequisite check (required)
 
 Before proposing commands, check whether `npx` is available (the wrapper depends on it):
@@ -82,6 +95,16 @@ npm install -g @playwright/cli@latest
 playwright-cli --help
 ```
 
+## Workflow decision guide
+
+Choose the lightest workflow that still gives reliable evidence:
+
+1. Use `open` plus `snapshot` when you need structure, refs, and quick interaction.
+2. Add `screenshot` when visual proof matters.
+3. Add `console`, `network`, or tracing when reproducing a bug.
+4. Use a named `--session` when several commands must share browser state.
+5. Use a fresh session name when you want isolation between tasks.
+
 ## Core workflow
 
 1. Open the page.
@@ -97,6 +120,14 @@ Minimal loop:
 "$PWCLI" snapshot
 "$PWCLI" click e3
 "$PWCLI" snapshot
+```
+
+For production checks, a good default is:
+
+```bash
+"$PWCLI" open https://example.com --headed
+"$PWCLI" snapshot
+"$PWCLI" screenshot
 ```
 
 ## When to snapshot again
@@ -141,6 +172,20 @@ Refs can go stale. When a command fails due to a missing ref, snapshot again.
 "$PWCLI" snapshot
 ```
 
+### Post-deploy audit pass
+
+Use this when a deployment succeeded technically but still needs browser confirmation:
+
+```bash
+"$PWCLI" open https://example.com
+"$PWCLI" snapshot
+"$PWCLI" screenshot
+"$PWCLI" click eX
+"$PWCLI" snapshot
+```
+
+Capture at least one artifact that proves the page rendered and one artifact that proves a key interaction still works.
+
 ## Wrapper script
 
 The wrapper scripts use `npx --package @playwright/cli playwright-cli` so the CLI can run without a global install. Use `playwright_cli.ps1` from PowerShell on Windows and `playwright_cli.sh` from bash-compatible shells:
@@ -169,3 +214,4 @@ Open only what you need:
 - Use `--headed` when a visual check will help.
 - When capturing artifacts in this repo, use `output/playwright/` and avoid introducing new top-level artifact folders.
 - Default to CLI commands and workflows, not Playwright test specs.
+- After an audit or debug pass, close sessions or clean up artifacts when they are no longer useful.
