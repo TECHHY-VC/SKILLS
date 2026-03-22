@@ -1,0 +1,4 @@
+interface:
+  display_name: "BDI Mental States"
+  short_description: "BDI (Belief-Desire-Intention) mental state modeling with RDF/OWL ontology."
+  default_prompt: "Use this skill when working with BDI agent architecture, mental state modeling, RDF ontology, cognitive agent design, or neuro-symbolic AI integration."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Context Compression"
+  short_description: "Compression strategies for long-running agent sessions exceeding context limits."
+  default_prompt: "Use this skill when working with context compression, conversation summarization, compaction strategies, or long-running agent sessions that exceed context window limits."

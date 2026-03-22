@@ -1,0 +1,4 @@
+interface:
+  display_name: "Context Optimization"
+  short_description: "Techniques for extending effective context capacity: compaction, masking, KV-cache, partitioning."
+  default_prompt: "Use this skill when working with context optimization, token cost reduction, KV-cache optimization, observation masking, or context partitioning strategies."

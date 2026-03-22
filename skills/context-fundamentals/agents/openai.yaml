@@ -1,0 +1,4 @@
+interface:
+  display_name: "Context Fundamentals"
+  short_description: "Foundational concepts: context components, attention mechanics, progressive disclosure."
+  default_prompt: "Use this skill when working with context window design, agent architecture, context budgeting, progressive disclosure, or understanding how context affects LLM performance."

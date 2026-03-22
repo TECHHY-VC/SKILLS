@@ -1,0 +1,4 @@
+interface:
+  display_name: "Memory Systems"
+  short_description: "Agent memory frameworks: Mem0, Zep/Graphiti, Letta, Cognee — benchmarks and selection guide."
+  default_prompt: "Use this skill when working with agent memory implementation, cross-session knowledge retention, memory framework selection, temporal knowledge graphs, or persistent agent state."

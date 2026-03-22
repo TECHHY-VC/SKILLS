@@ -1,0 +1,4 @@
+interface:
+  display_name: "Multi-Agent Patterns"
+  short_description: "Supervisor, swarm, and hierarchical multi-agent architectures with context isolation."
+  default_prompt: "Use this skill when working with multi-agent system design, supervisor patterns, swarm architectures, agent coordination, context isolation, or parallel agent execution."

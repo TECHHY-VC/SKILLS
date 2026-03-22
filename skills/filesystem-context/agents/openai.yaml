@@ -1,0 +1,4 @@
+interface:
+  display_name: "Filesystem Context"
+  short_description: "Using the filesystem for agent memory: scratch pads, plan persistence, dynamic skill loading."
+  default_prompt: "Use this skill when working with filesystem-based context management, agent scratch pads, tool output persistence, dynamic context discovery, or just-in-time context loading."

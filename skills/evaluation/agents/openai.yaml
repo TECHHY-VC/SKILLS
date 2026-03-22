@@ -1,0 +1,4 @@
+interface:
+  display_name: "Evaluation"
+  short_description: "Evaluation methods for agent systems: LLM-as-judge, multi-dimensional rubrics, continuous testing."
+  default_prompt: "Use this skill when working with agent evaluation, test frameworks, quality gates, LLM-as-judge, or measuring agent performance over time."

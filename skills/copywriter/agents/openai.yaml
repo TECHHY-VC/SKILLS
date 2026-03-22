@@ -1,0 +1,4 @@
+interface:
+  display_name: "Copywriter (Mikhail Hypov Style)"
+  short_description: "Writing and copywriting style of Mikhail / Misha Hypov — independent trader and analyst."
+  default_prompt: "Use this skill when working with financial articles, trading analysis, educational content, or market reviews in Mikhail Hypov's signature style."

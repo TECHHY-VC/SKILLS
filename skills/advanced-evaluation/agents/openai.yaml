@@ -1,0 +1,4 @@
+interface:
+  display_name: "Advanced Evaluation"
+  short_description: "Production-grade techniques for evaluating LLM outputs using LLMs as judges."
+  default_prompt: "Use this skill when working with LLM-as-judge implementation, evaluation rubrics, bias mitigation, pairwise comparison, or automated quality assessment pipelines."

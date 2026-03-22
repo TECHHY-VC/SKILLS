@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tool Design"
+  short_description: "Designing tools for LLMs: consolidation principle, architectural reduction, MCP naming."
+  default_prompt: "Use this skill when working with agent tool design, tool descriptions, tool consolidation, MCP tool naming conventions, or architectural reduction of tool sets."

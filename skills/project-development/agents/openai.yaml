@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Development"
+  short_description: "LLM project methodology: task-model fit, pipeline architecture, cost estimation."
+  default_prompt: "Use this skill when working with LLM project planning, pipeline architecture design, task-model fit evaluation, batch processing pipelines, or cost estimation for LLM-heavy projects."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Hosted Agents"
+  short_description: "Remote sandboxed agent infrastructure: image registry, warm pools, self-spawning agents."
+  default_prompt: "Use this skill when working with hosted coding agents, sandboxed execution environments, multiplayer agent sessions, background agents, or remote agent infrastructure."

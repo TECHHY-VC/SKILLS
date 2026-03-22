@@ -1,0 +1,4 @@
+interface:
+  display_name: "Web Coding Workflow"
+  short_description: "Full workflow for web development with Reuse-First and Security-First approach."
+  default_prompt: "Use this skill when working with web feature implementation, library selection, solution design, or security review."

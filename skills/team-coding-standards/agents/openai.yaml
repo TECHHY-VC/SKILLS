@@ -1,0 +1,4 @@
+interface:
+  display_name: "Team Coding Standards"
+  short_description: "Team coding rules for automated code review."
+  default_prompt: "Use this skill when working with PR reviews, code standards compliance checks, naming conventions, JSDoc requirements, or code comments."

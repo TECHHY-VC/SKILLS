@@ -1,0 +1,4 @@
+interface:
+  display_name: "Context Degradation"
+  short_description: "Patterns of context failure: lost-in-middle, poisoning, distraction, confusion, clash."
+  default_prompt: "Use this skill when working with context degradation diagnosis, lost-in-middle issues, context poisoning, agent performance degradation, or attention pattern analysis."

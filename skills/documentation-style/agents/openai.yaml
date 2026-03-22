@@ -1,0 +1,4 @@
+interface:
+  display_name: "Documentation Style"
+  short_description: "Team style for writing technical documentation."
+  default_prompt: "Use this skill when working with README files, CHANGELOG, JSDoc, or any technical documentation in a project."
