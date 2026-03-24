@@ -1,0 +1,4 @@
+interface:
+  display_name: "General Writing Style RU"
+  short_description: "Clear, direct Russian style for general writing"
+  default_prompt: "Use $general-writing-style-ru to rewrite this Russian text in a clear, direct style."

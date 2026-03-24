@@ -1,0 +1,4 @@
+interface:
+  display_name: "General Writing Style"
+  short_description: "Clear, direct English style for general writing"
+  default_prompt: "Use $general-writing-style to rewrite this English text in a clear, direct style."
