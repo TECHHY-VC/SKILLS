@@ -1,0 +1,4 @@
+interface:
+  display_name: "Publish Public Skills"
+  short_description: "Publish shared skills to TECHHY-VC/SKILLS"
+  default_prompt: "Use $publish-public-skills to add this skill to the shared TECHHY-VC/SKILLS repository."
