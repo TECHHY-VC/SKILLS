@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pre-Market Pitch Decks"
+  short_description: "Build investor decks for pre-market raises"
+  default_prompt: "Use $pre-market-investor-pitch-decks to design or review a pre-market investor deck for an equity, equity plus token warrant, or token-only raise."
