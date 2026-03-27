@@ -1,0 +1,4 @@
+interface:
+  display_name: "Brandbook Site Refresh"
+  short_description: "Apply brand guides to frontend systems"
+  default_prompt: "Use $brandbook-site-refresh to translate brand materials into checked-in assets, design tokens, and frontend UI updates."

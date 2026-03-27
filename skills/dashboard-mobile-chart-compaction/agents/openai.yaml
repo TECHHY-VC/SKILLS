@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mobile Chart Compaction"
+  short_description: "Keep analytical charts readable on phones"
+  default_prompt: "Use $dashboard-mobile-chart-compaction to refactor chart legends and breakdowns so they fit mobile screens without covering the plot."
