@@ -1,0 +1,4 @@
+interface:
+  display_name: "PRD Writer"
+  short_description: "Write a full Russian PRD for software teams"
+  default_prompt: "Use $prd-writer to write a complete Russian PRD for this product."
