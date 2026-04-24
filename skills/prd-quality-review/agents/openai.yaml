@@ -1,0 +1,4 @@
+interface:
+  display_name: "PRD Quality Review"
+  short_description: "Red-team a PRD before engineering handoff"
+  default_prompt: "Use $prd-quality-review to red-team this PRD before engineering handoff."
