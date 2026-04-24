@@ -1,0 +1,4 @@
+interface:
+  display_name: "PRD Scope Slicer"
+  short_description: "Cut broad product scope into a realistic v1"
+  default_prompt: "Use $prd-scope-slicer to define a realistic v1 and later-release scope."

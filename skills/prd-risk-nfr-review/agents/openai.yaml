@@ -1,0 +1,4 @@
+interface:
+  display_name: "PRD Risk and NFR Review"
+  short_description: "Review PRDs for risk, NFRs, and operations"
+  default_prompt: "Use $prd-risk-nfr-review to review this PRD for risk, NFRs, and operational readiness."
