@@ -1,0 +1,4 @@
+interface:
+  display_name: "PRD Discovery"
+  short_description: "Turn messy product input into a discovery brief"
+  default_prompt: "Use $prd-discovery to turn these product notes into a structured discovery brief."
