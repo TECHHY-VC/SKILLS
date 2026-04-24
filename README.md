@@ -48,6 +48,13 @@ This repository contains only generalized skill packages reviewed to avoid:
 - [`skills/evaluation`](skills/evaluation) — Evaluation methods for agent systems: LLM-as-judge, multi-dimensional rubrics, continuous testing
 - [`skills/advanced-evaluation`](skills/advanced-evaluation) — Production-grade LLM-as-judge: direct scoring, pairwise comparison, bias mitigation
 
+### Product Requirements
+- [`skills/prd-discovery`](skills/prd-discovery) — Convert messy product input into a structured discovery brief
+- [`skills/prd-scope-slicer`](skills/prd-scope-slicer) — Cut broad scope into a realistic v1 and release backlog
+- [`skills/prd-writer`](skills/prd-writer) — Write a full Russian PRD for software development
+- [`skills/prd-risk-nfr-review`](skills/prd-risk-nfr-review) — Review PRDs for security, privacy, NFRs, auditability, and operations
+- [`skills/prd-quality-review`](skills/prd-quality-review) — Red-team PRDs before engineering handoff
+
 ### Specialized
 - [`skills/bdi-mental-states`](skills/bdi-mental-states) — BDI (Belief-Desire-Intention) mental state modeling with RDF/OWL ontology
 
