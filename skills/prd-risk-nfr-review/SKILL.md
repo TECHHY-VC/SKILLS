@@ -1,68 +1,195 @@
 ---
 name: prd-risk-nfr-review
-description: Review a PRD for security, privacy, non-functional requirements, auditability, operational readiness, compliance-sensitive gaps, data risks, abuse scenarios, and production failure modes. Use when the user has a draft PRD or requirements document and needs a risk/NFR review before final product quality review or engineering handoff.
+description: review a software prd for non-functional requirements, operational readiness, security, privacy, permissions, auditability, abuse risks, and compliance-sensitive gaps. use when a draft prd exists and chatgpt needs to stress-test whether the document is safe, reliable, operable, and ready for engineering and launch planning. especially useful for workflow systems, crm, fintech, marketplaces, ai features, and trust-heavy products.
 ---
 
 # PRD Risk NFR Review
 
-Use this skill to stress-test a PRD for risks that are often under-specified before engineering starts.
+## Purpose
 
-Do not rewrite the full PRD unless the user asks. Produce findings, missing requirements, and concrete patches that can be added to the PRD.
+Use this skill to review a draft PRD through the lens of risk, non-functional requirements, trust, security, privacy, auditability, and operational readiness.
+
+This skill does not rewrite the whole PRD. It identifies gaps and recommends concrete amendments.
+
+This skill is universal and does not require connectors or external sources.
+
+## When to use
+
+Use this skill when:
+
+- a draft PRD already exists;
+- the product handles sensitive data;
+- the product includes identity, KYC, scoring, access, reputation, money flows, marketplace transactions, moderation, referrals, or introductions;
+- the product has operator-assisted workflows;
+- the PRD needs review before engineering handoff;
+- the PRD may be missing security, privacy, audit, or reliability requirements.
+
+## Main rule
+
+Review the PRD as a launch-risk artifact, not as a writing exercise.
+
+The goal is to find what could break trust, operations, reliability, privacy, or delivery.
 
 ## Workflow
 
-1. Identify the product domain, user roles, data classes, integrations, and operational surface.
-2. Review the PRD for security, privacy, compliance, abuse, fraud, auditability, reliability, observability, performance, scalability, accessibility, support, and incident response gaps.
-3. Rank findings by delivery risk and user/business impact.
-4. Suggest requirement-level fixes with IDs where possible.
-5. Separate blockers from improvements.
-6. If the PRD lacks enough detail, list the missing decisions needed to complete the risk review.
+Follow this process:
 
-## Output Structure
+1. Read the PRD end to end.
+2. Identify the product type and risk profile.
+3. Check non-functional requirements.
+4. Check access, permissions, security, and privacy.
+5. Check auditability and explainability.
+6. Check operational readiness.
+7. Check failure modes.
+8. Check abuse and misuse scenarios.
+9. Produce a structured review in Russian.
+10. Recommend concrete PRD amendments.
 
-Write in Russian unless the user requests another language:
+## Review dimensions
 
-```markdown
-# Risk and NFR Review: <название PRD>
+Always check relevant dimensions:
 
-## Verdict
-Ready / Needs revision / Blocked
+- security
+- privacy
+- permissions and access control
+- sensitive data handling
+- audit trail
+- reliability
+- performance
+- observability
+- recovery and rollback
+- operator workload
+- manual override
+- moderation or abuse controls
+- data retention
+- explainability of automated decisions
+- dependency fragility
+- launch readiness
 
-## Blockers
-## High Risk Findings
-## Medium Risk Findings
-## Low Risk Findings
-## Missing NFRs
-## Missing Security and Privacy Requirements
-## Abuse and Misuse Scenarios
-## Operational Readiness Gaps
-## Recommended PRD Patches
-## Open Decisions
-```
+## Severity levels
 
-Use this finding format:
+Use these levels:
 
-```markdown
-### <severity>: <short title>
-- Риск: <what can go wrong>
-- Где видно: <section, requirement ID, or "not specified">
-- Почему важно: <impact>
-- Исправление: <specific requirement or PRD edit>
-```
+### Critical
 
-## Review Checklist
+A gap that can break trust, safety, money flow, permissions, sensitive data handling, auditability, or safe launch.
 
-- Authentication, authorization, role boundaries, session handling.
-- Sensitive data collection, retention, deletion, export, and access logging.
-- Audit trails for security-sensitive and business-critical actions.
-- Abuse paths, spam, scraping, prompt injection, fraud, quota bypass, and privilege escalation where relevant.
-- Availability, latency, throughput, consistency, recovery, backup, and degradation behavior.
-- Monitoring, alerting, runbooks, support workflows, and incident response.
-- Accessibility and localization if user-facing.
+### Major
 
-## Quality Bar
+A gap likely to cause delivery confusion, production instability, operational overload, rework, or unsafe user experience.
 
-- Focus on concrete gaps, not generic warnings.
-- Prefer actionable requirement patches over abstract advice.
-- Do not block on low-risk missing details.
-- Be stricter for trust-sensitive, financial, healthcare, personal-data, or admin/control-plane products.
+### Minor
+
+A gap that improves completeness or clarity but is unlikely to break launch by itself.
+
+## Rules
+
+- Do not invent risks unrelated to the product.
+- Do not overstate minor issues.
+- Be specific.
+- Recommend exact additions to the PRD.
+- Separate blocker issues from improvement suggestions.
+- If a risk area is not applicable, say so briefly.
+
+## Output format
+
+Always answer in Russian using this structure:
+
+# Risk and NFR Review: [Название PRD]
+
+## 1. Overall verdict
+
+Выберите один статус:
+
+- acceptable with minor changes
+- needs material revision
+- not ready for delivery handoff
+
+Затем объясните решение.
+
+## 2. Critical gaps
+
+Перечислите только серьёзные блокеры.
+
+Для каждого:
+
+- issue;
+- why it matters;
+- recommended amendment.
+
+## 3. Major gaps
+
+Для каждого:
+
+- issue;
+- why it matters;
+- recommended amendment.
+
+## 4. Minor gaps
+
+Для каждого:
+
+- issue;
+- recommended improvement.
+
+## 5. Missing or weak NFR coverage
+
+Проверьте:
+
+### Performance
+
+Что отсутствует или требует уточнения.
+
+### Reliability
+
+Что отсутствует или требует уточнения.
+
+### Security
+
+Что отсутствует или требует уточнения.
+
+### Privacy
+
+Что отсутствует или требует уточнения.
+
+### Auditability
+
+Что отсутствует или требует уточнения.
+
+### Observability
+
+Что отсутствует или требует уточнения.
+
+## 6. Operational readiness review
+
+Оцените:
+
+- review queues;
+- manual override;
+- exception handling;
+- fallback logic;
+- support burden;
+- escalation paths;
+- operator workload.
+
+## 7. Abuse and misuse scenarios
+
+Опишите:
+
+- likely misuse cases;
+- missing controls;
+- recommended mitigations.
+
+## 8. Recommended PRD amendments
+
+Дайте конкретные блоки текста или пункты, которые нужно добавить в PRD.
+
+## Quality bar
+
+A strong review should:
+
+- find launch-relevant risks;
+- distinguish critical from minor;
+- give practical amendments;
+- improve safety and delivery readiness;
+- avoid abstract or generic warnings.
