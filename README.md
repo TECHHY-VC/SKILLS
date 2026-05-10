@@ -22,6 +22,7 @@ This repository contains only generalized skill packages reviewed to avoid:
 - [`skills/recharts-stacked-interactivity`](skills/recharts-stacked-interactivity) — Interactive stacked area and pie charts in React/Recharts
 - [`skills/jump-host-static-deploy`](skills/jump-host-static-deploy) — Deploy static sites via SSH jump host to Nginx on Linux VPS
 - [`skills/sandbox-ui-iteration`](skills/sandbox-ui-iteration) — Sandbox-first workflow for safe frontend iteration, visual QA, and production isolation
+- [`skills/browser-first-ux-qa`](skills/browser-first-ux-qa) — Browser-first QA flow for role-based UX validation with evidence-ready bug reporting
 
 ### Website Design & UX
 - [`skills/site-design-system`](skills/site-design-system) — Design systems, tokens, component contracts, and reusable page structure for websites
@@ -29,6 +30,8 @@ This repository contains only generalized skill packages reviewed to avoid:
 - [`skills/site-performance-seo-ui`](skills/site-performance-seo-ui) — Core Web Vitals, responsive media, and crawl-safe interface patterns for modern websites
 - [`skills/site-ux-states-patterns`](skills/site-ux-states-patterns) — Loading, empty, error, success, disclosure, and motion patterns for resilient website UX
 - [`skills/dashboard-reading-flow`](skills/dashboard-reading-flow) — Information hierarchy for analytical dashboards: snapshot, controls, interpretation, charts, and drill-downs
+- [`skills/ux-ui-oss-playbook`](skills/ux-ui-oss-playbook) — Open-source UX/UI best-practice playbook (GOV.UK, USWDS, Primer, Cloudscape, PatternFly, Polaris, Ant Design)
+- [`skills/role-based-cabinet-ux`](skills/role-based-cabinet-ux) — Role-based cabinet journeys and privacy-safe design for multi-role users without duplicate accounts
 
 ### Context Engineering
 - [`skills/context-fundamentals`](skills/context-fundamentals) — Foundational concepts: context components, attention mechanics, progressive disclosure
