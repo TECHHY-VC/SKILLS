@@ -61,6 +61,41 @@ This repository contains only generalized skill packages reviewed to avoid:
 ### Specialized
 - [`skills/bdi-mental-states`](skills/bdi-mental-states) — BDI (Belief-Desire-Intention) mental state modeling with RDF/OWL ontology
 
+<!-- TPO-SKILLS-START -->
+### Technical Product Owner Agent
+- [skills/tpo-acceptance-criteria-template](skills/tpo-acceptance-criteria-template) — Guideline module for Acceptance Criteria Template: preserves templates, checklists, gates, and execution rules
+- [skills/tpo-ai-developer-task-template](skills/tpo-ai-developer-task-template) — Guideline module for Ai Developer Task Template: preserves templates, checklists, gates, and execution rules
+- [skills/tpo-api-design-standards](skills/tpo-api-design-standards) — Guideline module for Api Design Standards: preserves templates, checklists, gates, and execution rules
+- [skills/tpo-architecture-and-module-planning-guidelines](skills/tpo-architecture-and-module-planning-guidelines) — Guideline module for Architecture And Module Planning Guidelines: preserves templates, checklists, gates, and execution rules
+- [skills/tpo-architecture-principles](skills/tpo-architecture-principles) — Guideline module for Architecture Principles: preserves templates, checklists, gates, and execution rules
+- [skills/tpo-backend-architecture](skills/tpo-backend-architecture) — Guideline module for Backend Architecture: preserves templates, checklists, gates, and execution rules
+- [skills/tpo-bug-tracking-template](skills/tpo-bug-tracking-template) — Guideline module for Bug Tracking Template: preserves templates, checklists, gates, and execution rules
+- [skills/tpo-code-review-checklist](skills/tpo-code-review-checklist) — Guideline module for Code Review Checklist: preserves templates, checklists, gates, and execution rules
+- [skills/tpo-code-ux-qa-review-checklist](skills/tpo-code-ux-qa-review-checklist) — Guideline module for Code Ux Qa Review Checklist: preserves templates, checklists, gates, and execution rules
+- [skills/tpo-coding-standards](skills/tpo-coding-standards) — Guideline module for Coding Standards: preserves templates, checklists, gates, and execution rules
+- [skills/tpo-database-design-rules](skills/tpo-database-design-rules) — Guideline module for Database Design Rules: preserves templates, checklists, gates, and execution rules
+- [skills/tpo-definition-of-done](skills/tpo-definition-of-done) — Guideline module for Definition Of Done: preserves templates, checklists, gates, and execution rules
+- [skills/tpo-definition-of-ready](skills/tpo-definition-of-ready) — Guideline module for Definition Of Ready: preserves templates, checklists, gates, and execution rules
+- [skills/tpo-design-review-checklist](skills/tpo-design-review-checklist) — Guideline module for Design Review Checklist: preserves templates, checklists, gates, and execution rules
+- [skills/tpo-development-stages-template](skills/tpo-development-stages-template) — Guideline module for Development Stages Template: preserves templates, checklists, gates, and execution rules
+- [skills/tpo-examples-of-good-outputs](skills/tpo-examples-of-good-outputs) — Guideline module for Examples Of Good Outputs: preserves templates, checklists, gates, and execution rules
+- [skills/tpo-frontend-architecture](skills/tpo-frontend-architecture) — Guideline module for Frontend Architecture: preserves templates, checklists, gates, and execution rules
+- [skills/tpo-interface-quality-criteria](skills/tpo-interface-quality-criteria) — Guideline module for Interface Quality Criteria: preserves templates, checklists, gates, and execution rules
+- [skills/tpo-module-structure-guidelines](skills/tpo-module-structure-guidelines) — Guideline module for Module Structure Guidelines: preserves templates, checklists, gates, and execution rules
+- [skills/tpo-product-owner-agent-operating-manual](skills/tpo-product-owner-agent-operating-manual) — Guideline module for Product Owner Agent Operating Manual: preserves templates, checklists, gates, and execution rules
+- [skills/tpo-product-requirements-template](skills/tpo-product-requirements-template) — Guideline module for Product Requirements Template: preserves templates, checklists, gates, and execution rules
+- [skills/tpo-release-checklist](skills/tpo-release-checklist) — Guideline module for Release Checklist: preserves templates, checklists, gates, and execution rules
+- [skills/tpo-repository-structure](skills/tpo-repository-structure) — Guideline module for Repository Structure: preserves templates, checklists, gates, and execution rules
+- [skills/tpo-roadmap-sprint-release-template](skills/tpo-roadmap-sprint-release-template) — Guideline module for Roadmap Sprint Release Template: preserves templates, checklists, gates, and execution rules
+- [skills/tpo-roadmap-template](skills/tpo-roadmap-template) — Guideline module for Roadmap Template: preserves templates, checklists, gates, and execution rules
+- [skills/tpo-security-checklist](skills/tpo-security-checklist) — Guideline module for Security Checklist: preserves templates, checklists, gates, and execution rules
+- [skills/tpo-sprint-planning-template](skills/tpo-sprint-planning-template) — Guideline module for Sprint Planning Template: preserves templates, checklists, gates, and execution rules
+- [skills/tpo-technical-specification-template](skills/tpo-technical-specification-template) — Guideline module for Technical Specification Template: preserves templates, checklists, gates, and execution rules
+- [skills/tpo-testing-guidelines](skills/tpo-testing-guidelines) — Guideline module for Testing Guidelines: preserves templates, checklists, gates, and execution rules
+- [skills/tpo-user-flow-template](skills/tpo-user-flow-template) — Guideline module for User Flow Template: preserves templates, checklists, gates, and execution rules
+- [skills/tpo-ux-ui-guidelines](skills/tpo-ux-ui-guidelines) — Guideline module for Ux Ui Guidelines: preserves templates, checklists, gates, and execution rules
+<!-- TPO-SKILLS-END -->
+
 ## Contributing
 
 More skills can be added after the same sanitization pass:
