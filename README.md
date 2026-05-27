@@ -57,6 +57,7 @@ This repository contains only generalized skill packages reviewed to avoid:
 - [`skills/skillopt-livemathematicianbench`](skills/skillopt-livemathematicianbench) — Seed guidance for LiveMathematicianBench tasks optimized with SkillOpt
 - [`skills/skillopt-officeqa`](skills/skillopt-officeqa) — Seed guidance for OfficeQA tasks optimized with SkillOpt
 - [`skills/skillopt-searchqa`](skills/skillopt-searchqa) — Seed guidance for SearchQA tasks optimized with SkillOpt
+- [`skills/skillopt-skillreview`](skills/skillopt-skillreview) — Seed guidance for rubric-based repository review tasks optimized with SkillOpt
 - [`skills/skillopt-spreadsheetbench`](skills/skillopt-spreadsheetbench) — Seed guidance for SpreadsheetBench tasks optimized with SkillOpt
 
 ### Product Requirements
