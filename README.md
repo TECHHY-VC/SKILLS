@@ -51,6 +51,14 @@ This repository contains only generalized skill packages reviewed to avoid:
 - [`skills/evaluation`](skills/evaluation) — Evaluation methods for agent systems: LLM-as-judge, multi-dimensional rubrics, continuous testing
 - [`skills/advanced-evaluation`](skills/advanced-evaluation) — Production-grade LLM-as-judge: direct scoring, pairwise comparison, bias mitigation
 
+### Skill Optimization
+- [`skills/skillopt-alfworld`](skills/skillopt-alfworld) — Seed guidance for ALFWorld tasks optimized with SkillOpt
+- [`skills/skillopt-docvqa`](skills/skillopt-docvqa) — Seed guidance for DocVQA tasks optimized with SkillOpt
+- [`skills/skillopt-livemathematicianbench`](skills/skillopt-livemathematicianbench) — Seed guidance for LiveMathematicianBench tasks optimized with SkillOpt
+- [`skills/skillopt-officeqa`](skills/skillopt-officeqa) — Seed guidance for OfficeQA tasks optimized with SkillOpt
+- [`skills/skillopt-searchqa`](skills/skillopt-searchqa) — Seed guidance for SearchQA tasks optimized with SkillOpt
+- [`skills/skillopt-spreadsheetbench`](skills/skillopt-spreadsheetbench) — Seed guidance for SpreadsheetBench tasks optimized with SkillOpt
+
 ### Product Requirements
 - [`skills/prd-discovery`](skills/prd-discovery) — Convert messy product input into a structured discovery brief
 - [`skills/prd-scope-slicer`](skills/prd-scope-slicer) — Cut broad scope into a realistic v1 and release backlog
