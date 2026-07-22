@@ -11,6 +11,10 @@ This repository contains only generalized skill packages reviewed to avoid:
 
 ## Available Skills
 
+### RepoSync
+- [`skills/reposync-worker`](skills/reposync-worker) — GitHub-native execution protocol for agents starting, implementing, handing off, and completing repository work
+- [`skills/reposync-advisor`](skills/reposync-advisor) — Evidence-based moderation and evaluation of agent outcomes with human-approved recommendation updates
+
 ### Content & Style
 - [`skills/copywriter`](skills/copywriter) — Financial analysis articles, educational trading content, and market reviews in a clear mentor-style voice
 - [`skills/documentation-style`](skills/documentation-style) — Team style for README, CHANGELOG, JSDoc technical documentation
