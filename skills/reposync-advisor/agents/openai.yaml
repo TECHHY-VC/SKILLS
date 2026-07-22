@@ -1,0 +1,10 @@
+interface:
+  display_name: RepoSync Advisor
+  short_description: Review GitHub evidence, evaluate agent outcomes, and propose human-approved project recommendations.
+policy:
+  products:
+    - chatgpt
+    - codex
+    - api
+    - atlas
+  allow_implicit_invocation: true
