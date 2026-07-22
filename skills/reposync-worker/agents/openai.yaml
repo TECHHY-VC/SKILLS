@@ -1,0 +1,10 @@
+interface:
+  display_name: RepoSync Worker
+  short_description: Follow the GitHub-native RepoSync protocol for starting, executing, handing off, and completing agent work.
+policy:
+  products:
+    - chatgpt
+    - codex
+    - api
+    - atlas
+  allow_implicit_invocation: true

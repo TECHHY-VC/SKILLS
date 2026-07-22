@@ -1,22 +1,135 @@
 # SKILLS
 
-Public, sanitized skills for Claude Code and compatible AI agents.
+Public, sanitized skills for Claude Code, Codex, Kimi Code, Zcode, Cursor, GitHub Copilot, ChatGPT, and compatible AI agents.
 
-This repository contains only generalized skill packages reviewed to avoid:
+This repository contains generalized skill packages reviewed to avoid:
 
-- corporate hostnames and internal infrastructure details
-- local private paths and usernames
-- keys, secrets, or deployment credentials
-- project-specific sensitive context
+- corporate hostnames and internal infrastructure details;
+- local private paths and usernames;
+- keys, secrets, or deployment credentials;
+- project-specific sensitive context.
+
+## RepoSync protocol
+
+RepoSync is a lightweight GitHub-native protocol for coordinating several AI agents without a central orchestrator, database, or router application.
+
+The protocol uses GitHub as the synchronization and audit layer:
+
+```text
+User selects an agent
+→ agent reads project instructions and recommendations
+→ agent works through a RepoSync Work Item
+→ agent records decisions, handoffs, and outcome evidence
+→ RepoSync Advisor periodically reviews completed work
+→ Advisor proposes updated agent recommendations through a Pull Request
+→ human reviews and merges
+```
+
+Canonical rule:
+
+> **Agent Advisor recommends. The current agent warns. The user decides. GitHub records.**
+
+RepoSync does not automatically launch, command, transfer, or reassign agents. It provides shared process instructions and evidence-based recommendations while preserving human control.
+
+### RepoSync Worker
+
+[`skills/reposync-worker`](skills/reposync-worker) is the execution skill for agents performing repository work.
+
+Use it when an agent starts, continues, reviews, hands off, or completes a task in a repository containing `AGENTS.md` or `.reposync/`.
+
+The Worker Skill requires the agent to:
+
+1. Read the canonical project instructions.
+2. Read current Advisor recommendations.
+3. Identify the active Work Item and assigned branch.
+4. Classify task category, complexity, risk, and affected modules.
+5. Notify the user when another agent is materially preferred.
+6. Keep decisions and blockers in a short Chronicle.
+7. Prepare a structured handoff when responsibility changes.
+8. Leave an evidence-linked Outcome Report after completion.
+
+Included resources:
+
+- Work Item manifest template;
+- Chronicle template;
+- Handoff template;
+- Outcome Report template;
+- installation instructions.
+
+### RepoSync Advisor
+
+[`skills/reposync-advisor`](skills/reposync-advisor) is the moderation and evaluation skill.
+
+Use it when reviewing completed Work Items, Pull Requests, handoffs, outcomes, rework, incidents, or recurring strengths and weaknesses of participating agents.
+
+The Advisor Skill requires the moderator to:
+
+1. Treat GitHub records as the source of truth.
+2. Compare agents only on similar tasks and project contexts.
+3. Separate objective evidence from agent self-report.
+4. Preserve both successful and failed outcomes.
+5. State when evidence is insufficient.
+6. Avoid a universal agent leaderboard.
+7. Propose project-specific recommendations with limitations and confidence.
+8. Publish recommendation changes through a reviewable Pull Request.
+9. Never merge recommendations automatically or control agents directly.
+
+Included resources:
+
+- evidence-priority rubric;
+- task completion, quality, safety, rework, process, and efficiency criteria;
+- confidence guidance;
+- Advisor Review template;
+- installation instructions.
+
+### Supported environments
+
+The protocol is designed for:
+
+- Codex;
+- Claude Code;
+- Kimi Code;
+- Zcode;
+- Cursor;
+- GitHub Copilot;
+- ChatGPT;
+- other agents able to load filesystem-based instructions and work with GitHub.
+
+### Installing one RepoSync Skill
+
+Clone only the required directory with Git sparse checkout:
+
+```bash
+git clone --filter=blob:none --no-checkout https://github.com/TECHHY-VC/SKILLS.git
+cd SKILLS
+git sparse-checkout init --cone
+git sparse-checkout set skills/reposync-worker
+git checkout main
+```
+
+For the Advisor Skill:
+
+```bash
+git sparse-checkout set skills/reposync-advisor
+```
+
+Then copy the selected skill directory into the agent platform's local or project skill directory. Exact installation paths differ by product, so follow the platform's skill-loading conventions.
 
 ## Available Skills
 
+### RepoSync
+
+- [`skills/reposync-worker`](skills/reposync-worker) — GitHub-native execution protocol for agents starting, implementing, handing off, and completing repository work
+- [`skills/reposync-advisor`](skills/reposync-advisor) — Evidence-based moderation and evaluation of agent outcomes with human-approved recommendation updates
+
 ### Content & Style
+
 - [`skills/copywriter`](skills/copywriter) — Financial analysis articles, educational trading content, and market reviews in a clear mentor-style voice
 - [`skills/documentation-style`](skills/documentation-style) — Team style for README, CHANGELOG, JSDoc technical documentation
 - [`skills/team-coding-standards`](skills/team-coding-standards) — Code review standards: naming conventions, JSDoc requirements, why-comments
 
 ### Web Development
+
 - [`skills/web-coding-workflow`](skills/web-coding-workflow) — Full Reuse-First + Security-First workflow for implementing web features
 - [`skills/playwright`](skills/playwright) — Automate real browsers from the terminal via playwright-cli
 - [`skills/recharts-stacked-interactivity`](skills/recharts-stacked-interactivity) — Interactive stacked area and pie charts in React/Recharts
@@ -25,6 +138,7 @@ This repository contains only generalized skill packages reviewed to avoid:
 - [`skills/browser-first-ux-qa`](skills/browser-first-ux-qa) — Browser-first QA flow for role-based UX validation with evidence-ready bug reporting
 
 ### Website Design & UX
+
 - [`skills/site-design-system`](skills/site-design-system) — Design systems, tokens, component contracts, and reusable page structure for websites
 - [`skills/site-accessibility-layout`](skills/site-accessibility-layout) — WCAG-first semantic layout, forms, navigation, focus handling, and keyboard-safe patterns
 - [`skills/site-performance-seo-ui`](skills/site-performance-seo-ui) — Core Web Vitals, responsive media, and crawl-safe interface patterns for modern websites
@@ -34,6 +148,7 @@ This repository contains only generalized skill packages reviewed to avoid:
 - [`skills/role-based-cabinet-ux`](skills/role-based-cabinet-ux) — Role-based cabinet journeys and privacy-safe design for multi-role users without duplicate accounts
 
 ### Context Engineering
+
 - [`skills/context-fundamentals`](skills/context-fundamentals) — Foundational concepts: context components, attention mechanics, progressive disclosure
 - [`skills/context-degradation`](skills/context-degradation) — Patterns of context failure: lost-in-middle, poisoning, distraction, confusion, clash
 - [`skills/context-compression`](skills/context-compression) — Compression strategies for long-running agent sessions exceeding context limits
@@ -41,6 +156,7 @@ This repository contains only generalized skill packages reviewed to avoid:
 - [`skills/filesystem-context`](skills/filesystem-context) — Using the filesystem for agent memory: scratch pads, plan persistence, dynamic skill loading
 
 ### Multi-Agent & Architecture
+
 - [`skills/multi-agent-patterns`](skills/multi-agent-patterns) — Supervisor, swarm, and hierarchical multi-agent architectures with context isolation
 - [`skills/hosted-agents`](skills/hosted-agents) — Remote sandboxed agent infrastructure: image registry, warm pools, self-spawning agents
 - [`skills/tool-design`](skills/tool-design) — Designing tools for LLMs: consolidation principle, architectural reduction, MCP naming
@@ -48,10 +164,12 @@ This repository contains only generalized skill packages reviewed to avoid:
 - [`skills/project-development`](skills/project-development) — LLM project methodology: task-model fit, pipeline architecture, cost estimation
 
 ### Evaluation & Quality
+
 - [`skills/evaluation`](skills/evaluation) — Evaluation methods for agent systems: LLM-as-judge, multi-dimensional rubrics, continuous testing
 - [`skills/advanced-evaluation`](skills/advanced-evaluation) — Production-grade LLM-as-judge: direct scoring, pairwise comparison, bias mitigation
 
 ### Product Requirements
+
 - [`skills/prd-discovery`](skills/prd-discovery) — Convert messy product input into a structured discovery brief
 - [`skills/prd-scope-slicer`](skills/prd-scope-slicer) — Cut broad scope into a realistic v1 and release backlog
 - [`skills/prd-writer`](skills/prd-writer) — Write a full Russian PRD for software development
@@ -59,6 +177,7 @@ This repository contains only generalized skill packages reviewed to avoid:
 - [`skills/prd-quality-review`](skills/prd-quality-review) — Red-team PRDs before engineering handoff
 
 ### Specialized
+
 - [`skills/bdi-mental-states`](skills/bdi-mental-states) — BDI (Belief-Desire-Intention) mental state modeling with RDF/OWL ontology
 
 <!-- TPO-SKILLS-START -->
@@ -99,6 +218,7 @@ This repository contains only generalized skill packages reviewed to avoid:
 ## Contributing
 
 More skills can be added after the same sanitization pass:
-- remove corporate hostnames and internal paths
-- remove keys, tokens, credentials
-- generalize project-specific context to reusable patterns
+
+- remove corporate hostnames and internal paths;
+- remove keys, tokens, credentials;
+- generalize project-specific context to reusable patterns.
